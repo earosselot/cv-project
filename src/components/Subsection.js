@@ -1,6 +1,5 @@
 import './../styles/Subsection.css'
 import { Component } from 'react'
-import Item from './Item'
 import ItemEdit from './ItemEdit'
 import EditSaveButton from './EditSaveButton'
 import DeleteButton from './DeleteButton'
@@ -46,41 +45,43 @@ class Subsection extends Component {
         const { fields } = this.state
 
         let fieldsArray
-        if (this.state.editing) {
-            fieldsArray = fields.map(field =>
-                <ItemEdit field={field}
-                          key={field.id}
-                          onChangeValue={this.handleItemValueChange} />
-            )
-        } else {
-            fieldsArray = fields.map(field =>
-                <Item field={field}
-                      key={field.id} />
-            )
-        }
+        // if (this.state.editing) {
+        //     fieldsArray = fields.map(field =>
+        //         <ItemEdit field={field}
+        //                   key={field.id}
+        //                   onChangeValue={this.handleItemValueChange}
+        //                   disabled={!this.state.editing}/>
+        //     )
+        // } else {
+        //     fieldsArray = fields.map(field =>
+        //         <ItemEdit field={field}
+        //                   key={field.id} />
+        //     )
+        // }
+
+        fieldsArray = fields.map(field =>
+            <ItemEdit field={field}
+                      key={field.id}
+                      onChangeValue={this.handleItemValueChange}
+                      disabled={!this.state.editing}/>
+        )
 
         return (
             <div className="Subsection">
-
-
                 <div className="subsectionForm">
                     <form className="formBody">
                         {fieldsArray}
                     </form>
                 </div>
-
                 <div className="btn-container">
-
                     <EditSaveButton
                         editing={this.state.editing}
                         onStartEditing={this.handleStartEditingClick} />
-
                     {(this.props.section !== 'General Information') ?
                         <DeleteButton
                             subsectionId={this.props.id}
                             onRemoveSubsectionClick={this.props.onRemoveSubsectionClick} />
                         : null }
-
                 </div>
             </div>
         )

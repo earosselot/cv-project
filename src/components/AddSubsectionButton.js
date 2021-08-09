@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Plus from "../icons/Plus";
 
 
 class AddSubsectionButton extends Component {
@@ -16,7 +17,7 @@ class AddSubsectionButton extends Component {
             <button
                 onClick={this.handleAddSubsection}
                 className="btn btn-white flex-center" >
-                Add Subsection
+                <Plus width="1.75rem" height="1.75rem" fill="var(--darkblue100)" />
             </button>
         )
     }

@@ -13,7 +13,7 @@ class ItemEdit extends Component {
     }
 
     render() {
-        const { field } = this.props
+        const { field, disabled } = this.props
 
         return (
             <div className="ItemEdit">
@@ -21,7 +21,9 @@ class ItemEdit extends Component {
                 <input type={field.type}
                        id={field.id}
                        value={field.value}
-                       onChange={this.handleItemValueChange} />
+                       onChange={this.handleItemValueChange}
+                       disabled={disabled}
+                       readOnly={disabled}/>
             </div>
         )
     }

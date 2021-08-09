@@ -5,6 +5,7 @@
   --darkblue: 18, 36, 46;
   --darkblue100: rgba(var(--darkblue), 1);
   --darkblue75: rgba(var(--darkblue), .75);
+  --darkblue50: rgba(var(--darkblue), .5);
 
   --orange: 251, 133, 0;
   --orange100: rgba(var(--orange), 1);
@@ -15,6 +16,10 @@
 
   --blue: 33, 158, 188;
   --blue100: rgba(var(--blue), 1);
+  --blue25: rgba(var(--blue), .1);
+
+  --bluehover: 26,124, 147;
+  --bluehover100: rgba(var(--bluehover), 1);
 }
 
 body {

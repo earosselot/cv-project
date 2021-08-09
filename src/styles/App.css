@@ -7,8 +7,8 @@
 
 header {
   text-align: center;
-  background-color: var(--darkblue100);
-  color: var(--white100);
+  background-color: var(--blue100);
+  color: var(--darkblue100);
   padding: 20px;
 }
 

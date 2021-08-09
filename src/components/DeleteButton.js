@@ -16,8 +16,9 @@ class DeleteButton extends Component {
         return (
             <button
                 onClick={this.handleRemoveSubsection}
-                className="btn btn-orange-outline flex-end">
-                x
+                className="btn flex-end btn-close"
+                >
+
             </button>
         )
     }

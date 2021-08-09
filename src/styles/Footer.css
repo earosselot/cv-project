@@ -12,11 +12,6 @@
     margin-right: 0.5rem;
 }
 
-.FooterIcon {
-    height: 1.3rem;
-    width: 1.3rem;
-}
-
-.FooterIcon :hover {
+.footer-link :hover {
     opacity: 75%;
 }

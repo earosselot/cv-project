@@ -1,0 +1,6 @@
+export { default as CvIcon } from './CvIcon'
+export { default as Cross } from './Cross'
+export { default as Edit } from './Edit'
+export { default as Github } from './Github'
+export { default as Plus } from './Plus'
+export { default as Save } from './Save'
