@@ -1,0 +1,22 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 1rem;
+    background-color: var(--blue100);
+}
+
+.Footer p {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.FooterIcon {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.FooterIcon :hover {
+    opacity: 75%;
+}

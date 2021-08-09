@@ -1,6 +1,6 @@
+import './styles/index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './styles/index.css'
 import App from './App'
 import uniqid from 'uniqid'
 
@@ -40,7 +40,7 @@ const sections = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <App sections={sections}/>
+    <App sections={sections} />
   </React.StrictMode>,
   document.getElementById('root')
 );

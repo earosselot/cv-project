@@ -1,13 +1,31 @@
+:root {
+  --white: 255, 255, 255;
+  --white100: rgba(var(--white), 1);
+
+  --darkblue: 18, 36, 46;
+  --darkblue100: rgba(var(--darkblue), 1);
+  --darkblue75: rgba(var(--darkblue), .75);
+
+  --orange: 251, 133, 0;
+  --orange100: rgba(var(--orange), 1);
+  --orange25: rgba(var(--orange), .25);
+
+  --darkorange: 221, 116, 0;
+  --darkorange100: rgba(var(--darkorange), 1);
+
+  --blue: 33, 158, 188;
+  --blue100: rgba(var(--blue), 1);
+}
+
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+

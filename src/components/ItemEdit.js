@@ -1,13 +1,5 @@
+import './../styles/ItemEdit.css'
 import { Component } from 'react'
-
-// this.props = {
-//     field = {
-//         id: "ks36mnzk"
-//         title: "Name"
-//         type: "text"
-//         value: ''
-//     }
-// }
 
 
 class ItemEdit extends Component {
@@ -24,7 +16,7 @@ class ItemEdit extends Component {
         const { field } = this.props
 
         return (
-            <div>
+            <div className="ItemEdit">
                 <label htmlFor={field.id}>{field.title}: </label>
                 <input type={field.type}
                        id={field.id}

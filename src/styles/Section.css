@@ -1,0 +1,19 @@
+.Section {
+    border: 2px solid var(--darkblue100);
+    background-color: var(--darkblue100);
+    border-radius: .75rem;
+    margin: 1.25rem;
+    padding: .75rem;
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    /*width: 50%;*/
+}
+
+h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: var(--orange100);
+}
+
+

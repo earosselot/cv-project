@@ -13,7 +13,11 @@ class AddSubsectionButton extends Component {
 
     render() {
         return (
-            <button onClick={this.handleAddSubsection}>Add Subsection</button>
+            <button
+                onClick={this.handleAddSubsection}
+                className="btn btn-white flex-center" >
+                Add Subsection
+            </button>
         )
     }
 }

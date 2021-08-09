@@ -1,5 +1,5 @@
+import './../styles/btn.css'
 import { Component } from 'react'
-
 
 class EditSaveButton extends Component {
     constructor(props) {
@@ -13,7 +13,9 @@ class EditSaveButton extends Component {
 
     render() {
         return (
-            <button onClick={this.handleStartEditingClick}>
+            <button
+                onClick={this.handleStartEditingClick}
+                className="btn btn-blue" >
                 {(this.props.editing) ? 'Save' : 'Edit'}
             </button>
         )

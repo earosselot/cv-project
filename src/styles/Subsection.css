@@ -1,0 +1,29 @@
+.Subsection {
+    padding: .75rem;
+    border: 1px solid var(--darkblue100);
+    background-color: var(--white100);
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: row;
+    color: var(--darkblue100);
+    gap: .5rem;
+}
+
+.subsectionForm {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.formBody {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}

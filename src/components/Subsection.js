@@ -1,3 +1,4 @@
+import './../styles/Subsection.css'
 import { Component } from 'react'
 import Item from './Item'
 import ItemEdit from './ItemEdit'
@@ -59,18 +60,28 @@ class Subsection extends Component {
         }
 
         return (
-            <div>
-                <form>
-                    {fieldsArray}
-                </form>
-                <EditSaveButton
-                    editing={this.state.editing}
-                    onStartEditing={this.handleStartEditingClick} />
-                {(this.props.section !== 'General Information') ?
-                    <DeleteButton
-                        subsectionId={this.props.id}
-                        onRemoveSubsectionClick={this.props.onRemoveSubsectionClick} />
-                    : null }
+            <div className="Subsection">
+
+
+                <div className="subsectionForm">
+                    <form className="formBody">
+                        {fieldsArray}
+                    </form>
+                </div>
+
+                <div className="btn-container">
+
+                    <EditSaveButton
+                        editing={this.state.editing}
+                        onStartEditing={this.handleStartEditingClick} />
+
+                    {(this.props.section !== 'General Information') ?
+                        <DeleteButton
+                            subsectionId={this.props.id}
+                            onRemoveSubsectionClick={this.props.onRemoveSubsectionClick} />
+                        : null }
+
+                </div>
             </div>
         )
     }

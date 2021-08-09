@@ -1,3 +1,4 @@
+import './../styles/Section.css'
 import { Component } from 'react'
 import Subsection from './Subsection'
 import AddSubsectionButton from './AddSubsectionButton'
@@ -44,7 +45,7 @@ class Section extends Component {
                         onRemoveSubsectionClick={this.handleRemoveSubsection} /> )
 
         return (
-            <div>
+            <div className="Section">
                 <h3>{section.title}</h3>
                 {subsections}
                 {(section.title !== 'General Information') ?

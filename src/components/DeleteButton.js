@@ -1,3 +1,4 @@
+import './../styles/btn.css'
 import { Component } from 'react'
 
 
@@ -14,8 +15,9 @@ class DeleteButton extends Component {
     render() {
         return (
             <button
-                onClick={this.handleRemoveSubsection} >
-                Delete
+                onClick={this.handleRemoveSubsection}
+                className="btn btn-orange-outline flex-end">
+                x
             </button>
         )
     }

@@ -1,6 +1,7 @@
 import './styles/App.css'
 import { Component } from 'react'
 import Section from './components/Section'
+import Footer from './components/Footer'
 
 
 class App extends Component {
@@ -13,13 +14,16 @@ class App extends Component {
     render() {
         const sections = this.props.sections.map(section =>
             <Section section={section}
-                     key={section.id}/>
+                     key={section.id} />
         )
 
         return (
-            <div>
-                <h1>CV 'App'lication</h1>
-                {sections}
+            <div className="App">
+                <header><h1>CV App</h1></header>
+                <div className="sections-container">
+                    {sections}
+                </div>
+                <Footer />
             </div>
         )
     }
