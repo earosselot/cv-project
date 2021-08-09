@@ -15,16 +15,8 @@ class Subsection extends Component {
             fields: stateFields,
             editing: true,
         }
-        this.handleStartEditingClick = this.handleStartEditingClick.bind(this)
         this.handleItemValueChange = this.handleItemValueChange.bind(this)
-    }
-
-    handleStartEditingClick() {
-        this.setState(() => {
-            return {
-                editing: !this.state.editing,
-            }
-        })
+        this.handleFormSubmit = this.handleFormSubmit.bind(this)
     }
 
     handleItemValueChange(fieldId, fieldValue) {
@@ -41,24 +33,19 @@ class Subsection extends Component {
         })
     }
 
+    handleFormSubmit(e) {
+        e.preventDefault()
+        this.setState(() => {
+            return {
+                editing: !this.state.editing,
+            }
+        })
+    }
+
     render() {
         const { fields } = this.state
 
         let fieldsArray
-        // if (this.state.editing) {
-        //     fieldsArray = fields.map(field =>
-        //         <ItemEdit field={field}
-        //                   key={field.id}
-        //                   onChangeValue={this.handleItemValueChange}
-        //                   disabled={!this.state.editing}/>
-        //     )
-        // } else {
-        //     fieldsArray = fields.map(field =>
-        //         <ItemEdit field={field}
-        //                   key={field.id} />
-        //     )
-        // }
-
         fieldsArray = fields.map(field =>
             <ItemEdit field={field}
                       key={field.id}
@@ -68,21 +55,21 @@ class Subsection extends Component {
 
         return (
             <div className="Subsection">
-                <div className="subsectionForm">
-                    <form className="formBody">
+                <form className="subsection-form" onSubmit={this.handleFormSubmit}>
+                    <div className="form-body">
                         {fieldsArray}
-                    </form>
-                </div>
-                <div className="btn-container">
-                    <EditSaveButton
-                        editing={this.state.editing}
-                        onStartEditing={this.handleStartEditingClick} />
-                    {(this.props.section !== 'General Information') ?
-                        <DeleteButton
-                            subsectionId={this.props.id}
-                            onRemoveSubsectionClick={this.props.onRemoveSubsectionClick} />
-                        : null }
-                </div>
+                    </div>
+                    <div className="btn-container">
+                        <EditSaveButton
+                            editing={this.state.editing}
+                            onStartEditing={this.handleStartEditingClick} />
+                        {(this.props.section !== 'General Information')
+                            ? <DeleteButton
+                                subsectionId={this.props.id}
+                                onRemoveSubsectionClick={this.props.onRemoveSubsectionClick} />
+                            : null }
+                    </div>
+                </form>
             </div>
         )
     }

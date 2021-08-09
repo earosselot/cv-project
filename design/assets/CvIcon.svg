@@ -12,8 +12,11 @@
    viewBox="0 0 135.46666 135.46667"
    version="1.1"
    id="svg8"
-   sodipodi:docname="icon.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   sodipodi:docname="CvIcon.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/earosselot/Documents/The_Odin_Project/cv-project/public/cvlogo192.png"
+   inkscape:export-xdpi="36.000004"
+   inkscape:export-ydpi="36.000004">
   <defs
      id="defs2">
     <rect
@@ -451,15 +454,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="380.18013"
-     inkscape:cy="380.38379"
+     inkscape:cx="-2.2437514"
+     inkscape:cy="187.95805"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="850"
-     inkscape:window-x="1920"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
@@ -472,7 +475,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -480,6 +483,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#219ebc;fill-opacity:1;stroke:none;stroke-width:0.378786"
+       id="rect83"
+       width="135.08788"
+       height="135.08788"
+       x="0.18939565"
+       y="0.18939565"
+       ry="13.670688" />
     <rect
        style="fill:#8ecae6;fill-opacity:0;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10"
@@ -489,7 +500,7 @@
        y="-228.85844" />
     <g
        id="g2801"
-       transform="matrix(2.9297646,0,0,2.9297646,593.55484,-657.00722)">
+       transform="matrix(2.706081,0,0,2.706081,553.40907,-601.67425)">
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.491045;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect2796"

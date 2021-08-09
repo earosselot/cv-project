@@ -9,14 +9,15 @@
     gap: .5rem;
 }
 
-.subsectionForm {
+.subsection-form {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: .5rem;
 }
 
-.formBody {
+.form-body {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: .5rem;

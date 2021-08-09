@@ -22,6 +22,7 @@ class ItemEdit extends Component {
                        id={field.id}
                        value={field.value}
                        onChange={this.handleItemValueChange}
+                       required={true}
                        disabled={disabled}
                        readOnly={disabled}/>
             </div>
