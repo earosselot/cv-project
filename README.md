@@ -1,7 +1,6 @@
 # Cv Application
 
-[Live on Github Pages](https://)
-// Add Github pages
+[Live on Github Pages](https://earosselot.github.io/cv-project/)
 
 Project: Cv application
 
