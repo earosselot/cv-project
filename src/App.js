@@ -1,28 +1,27 @@
 import './styles/App.css'
-import { Component } from 'react'
+// import { Component } from 'react'
 import Header from './components/Header'
-import Section from './components/Section'
+import Section from './components/CvForm/Section'
 import Footer from './components/Footer'
+import Main from "./components/Main";
 
+const App = (props) => {
 
-class App extends Component {
+    const sections = props.sections.map(section =>
+        <Section section={section}
+                 key={section.id} />
+    )
 
-    render() {
-        const sections = this.props.sections.map(section =>
-            <Section section={section}
-                     key={section.id} />
-        )
-        return (
-            <div className="App">
-                {/*<header><h1>CV App</h1></header>*/}
-                <Header />
-                <div className="sections-container">
-                    {sections}
-                </div>
-                <Footer />
-            </div>
-        )
-    }
+    return (
+        <div className="App">
+            <Header />
+            <Main />
+            {/*<div className="sections-container">*/}
+            {/*    {sections}*/}
+            {/*</div>*/}
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App

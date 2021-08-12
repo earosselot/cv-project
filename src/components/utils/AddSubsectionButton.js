@@ -1,6 +1,5 @@
 import { Component } from 'react'
-import Plus from "../icons/Plus";
-
+import Plus from '../../icons/Plus'
 
 class AddSubsectionButton extends Component {
     constructor(props) {

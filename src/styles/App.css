@@ -19,7 +19,6 @@ h1 {
 
 .sections-container {
   flex-grow: 1;
-
   display: flex;
   flex-direction: column;
   justify-self: center;

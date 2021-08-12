@@ -6,7 +6,7 @@ import uniqid from 'uniqid'
 
 const sections = [
     {
-        title: 'General Information',
+        title: 'Personal Information',
         id: uniqid(),
         fields: [
             {title: 'Name', type: 'text'},

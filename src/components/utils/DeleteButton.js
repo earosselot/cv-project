@@ -1,4 +1,4 @@
-import './../styles/btn.css'
+import '../../styles/btn.css'
 import { Component } from 'react'
 
 

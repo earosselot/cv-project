@@ -1,11 +1,12 @@
-import './../styles/btn.css'
+import '../../styles/btn.css'
 import { Component } from 'react'
-import Save from "../icons/Save";
-import Edit from "../icons/Edit";
+import Save from "../../icons/Save";
+import Edit from "../../icons/Edit";
 
 class EditSaveButton extends Component {
 
     render() {
+        console.log(this.props.editing)
         return (
             <button
                 type="submit"
